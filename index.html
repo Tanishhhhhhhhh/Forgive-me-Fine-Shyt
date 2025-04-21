@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgive Me. Fine Shytt GFin 💘</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #EE696B, #c71585);
+      overflow-x: hidden;
+      color: #333;
+      position: relative;
+    }
+    .intro {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .intro h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .typing {
+      font-size: 1.3rem;
+      border-right: .1em solid #000;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(60, end) forwards;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .envelope-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 4rem auto;
+    }
+    .envelope {
+      width: 300px;
+      height: 180px;
+      background: #ffb6c1;
+      border: 2px solid #ff69b4;
+      border-radius: 12px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(255,105,180,0.3);
+      transition: transform 0.3s ease;
+    }
+    .envelope:hover {
+      transform: scale(1.05);
+    }
+    .letter {
+      display: none;
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      max-width: 400px;
+      margin-top: 1.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .buttons {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .yes {
+      background-color: #EE696B;
+      color: white;
+    }
+    .yes:hover {
+      background-color: #ff1493;
+    }
+    .no {
+      background-color: #ddd;
+      color: #333;
+      position: relative;
+    }
+    @keyframes floatHearts {
+      0% { transform: translateY(100vh); opacity: 0; }
+      100% { transform: translateY(-100vh); opacity: 1; }
+    }
+    .heart {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: hotpink;
+      transform: rotate(45deg);
+      animation: floatHearts 6s linear infinite;
+    }
+    .heart::before, .heart::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: hotpink;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -7px;
+      left: 0;
+    }
+    .heart::after {
+      left: -7px;
+      top: 0;
+    }
+    .gif-section {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .gif-section img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,105,180,0.3);
+    }
+    .message-section {
+      margin-top: 4rem;
+      text-align: center;
+    }
+    .message-section h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .message-section p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro">
+    <h1> Im Sorry Fine Shyt... 💔</h1>
+    <p class="typing">I know I disappeared. But this time, I'm here. For real.</p>
+  </div>
+
+  <div class="envelope-section">
+    <div class="envelope" onclick="openLetter()">
+      <p>Stroke my Dih Cuh 💌</p>
+    </div>
+    <div class="letter" id="letter">
+      <p><strong>Dear Fine Shyt,</strong></p>
+      <p>I know I vanished like a clown. No excuses. I was scared, stupid, and didn’t realize how much your energy meant until I lost it. You deserve way better—and I’m here, hoping I still have a shot.</p>
+      <p>– This Regretful Fool 💀</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="btn yes" onclick="showLove()">Yes, I forgive you 💖</button>
+    <button class="btn no" id="noBtn" onmouseover="runAway(this)">Nope 😤</button>
+  </div>
+
+  <div class="gif-section">
+    <h2> Can I Hit Now? 👀</h2>
+    <img src="https://media.tenor.com/xxPgBuwmddQAAAAi/cat.gif" alt="Sad crying gif">
+  </div>
+
+  <div class="message-section">
+    <h2>Aight Bro thats enough shit and giggles </h2>
+    <p>If this website made you smile, even just a little... then maybe, just maybe, it’s not over for us. I’ll wait. I’ll do better. also this does NOT make me want you or anything js did cuz you were "hurt" and i js want someone to play games with💘
+    </p>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/yogqk02piykyc8bjqf29x/thinkin-bout-you.mp3?rlkey=l59d9cgv50znv4r3ksvr0hlqw&st=7ijh3wtz" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function openLetter() {
+      document.getElementById('letter').style.display = 'block';
+    }
+
+    function showLove() {
+      for (let i = 0; i < 100; i++) {
+        let heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.top = '100vh';
+        heart.style.animationDuration = 3 + Math.random() * 2 + 's';
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 5000);
+      }
+      alert("Okay... that means the world to me 😭💘");
+    }
+
+    function runAway(btn) {
+      const offset = 150;
+      const maxX = window.innerWidth - btn.offsetWidth;
+      const maxY = window.innerHeight - btn.offsetHeight;
+
+      let randomX = (Math.random() - 0.5) * offset;
+      let randomY = (Math.random() - 0.5) * offset;
+
+      let newLeft = btn.offsetLeft + randomX;
+      let newTop = btn.offsetTop + randomY;
+
+      newLeft = Math.max(0, Math.min(newLeft, maxX));
+      newTop = Math.max(0, Math.min(newTop, maxY));
+
+      btn.style.position = 'absolute';
+      btn.style.left = newLeft + 'px';
+      btn.style.top = newTop + 'px';
+    }
+  </script>
+</body>
+</html>
+
